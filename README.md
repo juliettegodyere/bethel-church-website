@@ -26,3 +26,6 @@ Now that we've got the project made and app files collected together, let's publ
 
 https://bethel-website-256107.appspot.com
 
+**Go Daddy URL**
+
+http://bethelbiblechurchhq.org/
