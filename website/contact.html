@@ -205,10 +205,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             <div class="col-12 col-lg-6">
                                 <div class="contact-form-area">
                                     <h5>Send us a message</h5>
-                                    <form action="#" method="post">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <form action="contactform.php" method="post">
+                                        <input type="text" class="form-control" id="name" name ="name" placeholder="Name">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
+                                        <textarea name="message" class="form-control" id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                                         <button class="btn faith-btn" type="submit">Contact Us</button>
                                     </form>
                                 </div>
@@ -220,11 +220,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </section>
     <!-- ##### Contact Area End ##### -->
-
+    <br/><br />
     <!-- ##### Google Maps ##### -->
-    <div class="map-area">
-        <div id="googleMap"></div>
-    </div>
+    <section class="map">
+        <div class="mapouter">
+            <div><iframe id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=bethel%20bible%20church%20surulere%20lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.crocothemes.net"></a>
+            </div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                }
+            </style>
+        </div>
+    </section>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
