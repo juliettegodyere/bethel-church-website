@@ -1,23 +1,6 @@
-<?php/* Start First try*/ ?>
-<?php
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $mailFrom = $_POST['email'];
-        $message = $_POST['message'];
-
-        $mailTO = "victoria.kazeem@pmglobaltechnology.com";//remember to change to bbc mail
-        $headers = "From: ".$mailFrom;
-        $txt = "Mail from ".$name.".\n\n".$message;
-
-        mail($mailTO, $subject, $txt, $headers);
-        header("Location: contact.php?mailsend");
-    }
-?>
-<?php/* End First try*/ ?>
-
 
 <?php/* Start Second try*/ ?>
-<?php
+<?php 
  
   //response generation function
   $response = "";
@@ -40,41 +23,18 @@ $message_unsent  = "Message was not sent. Try Again.";
 $message_sent    = "Thanks! Your message has been sent.";
  
 //user posted variables
-$name = $_POST['message_name'];
-$email = $_POST['message_email'];
-$message = $_POST['message_text'];
-$human = $_POST['message_human'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$human = $_POST['human'];
  
 //php mailer variables
-$to = "victoria.kazeem@pmglobaltechnology.com"; //remember to change to bbc mail
+$to = "kelzvictoria@gmail.com"; //remember to change to bbc mail
 $subject = "Someone sent a message from ". $name;
 $headers = 'From: '. $email . "\r\n" .
   'Reply-To: ' . $email . "\r\n";
 
-if(!$human == 0){
-  if($human != 2) my_contact_form_generate_response("error", $not_human); //not human!
-  else {
- 
-          //validate email
-      if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-        my_contact_form_generate_response("error", $email_invalid);
-      else //email is valid
-      {
-        //validate presence of name and message
-        if(empty($name) || empty($message)){
-          my_contact_form_generate_response("error", $missing_content);
-        }
-        else //ready to go!
-        {
-          $sent = mail($to, $subject, $message, $headers);
+          mail($to, $subject, $message, $headers);
           header("Location: contact.php?mailsend");
-          if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
-          else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
-        }
-      }
-  }
-}
-else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
 
-?>
-<?php/* End Second try*/ ?>
+ ?>
