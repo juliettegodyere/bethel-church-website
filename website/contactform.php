@@ -35,6 +35,6 @@ $headers = 'From: '. $email . "\r\n" .
   'Reply-To: ' . $email . "\r\n";
 
           mail($to, $subject, $message, $headers);
-          header("Location: contact.php?mailsend");
+          header("Location: contact.html?mailsend");
 
  ?>
