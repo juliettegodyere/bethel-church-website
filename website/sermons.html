@@ -52,6 +52,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="top-header-content h-100 d-flex align-items-center justify-content-end">
+                            <!-- Next Events Countdown -->
+                            <div class="next-events-countdown d-flex align-items-center">
+                                <p>Next Big Event:</p>
+                                <div class="events-cd" data-countdown="2022/01/01"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Navbar Area -->
         <div class="faith-main-menu">
@@ -61,12 +77,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <nav class="classy-navbar justify-content-between" id="faithNav">
 
                         <!-- Logo -->
-                        <a
-                class="nav-brand"
-                href="index.html"
-                style="max-width: 20% !important;"
-                ><img src="img/BBC-Logo-1.png" alt=""
-              /></a>
+                        <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -94,6 +105,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                     </li>
                                 </ul>
 
+                                <!-- Search Button -->
+                                <div class="search-btn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -112,7 +128,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="breadcumb-text">
                         <h5>Live from church</h5>
                         <h2>Sermons</h2>
-                        <p>Cras iaculis eleifend arcu, non cursus sem. Morbi viverra varius nisl, ac varius mauris interdum sit amet. Aenean ac fermentum neque.</p>
+                        <p>Listen and be blessed.</p>
                     </div>
                 </div>
             </div>
@@ -128,33 +144,427 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="section-heading text-center mx-auto">
                         <img src="img/core-img/cross.png" alt="">
                         <h3>The Sermons</h3>
-                        <p>Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh.</p>
-                    </div>
+                            </div>
                 </div>
             </div>
 
-            <div class="row" id="sermons-div">
-                <div class="single-sermons m-2">
-                    <div class="sermons-content d-flex align-items-center">
-                        <div class="sermons-thumbnail bg-img" style="background-image: url(${sermon.background_image});"></div>
-                        <!-- Sermons Content -->
-                        <div class="sermons-text">
-                            <a href="#">
-                                <h6>${sermon.title}</h6>
-                            </a>
-                            <p>By ${sermon.pastor}</p>
-                            <p class="date">${sermon.date}</p>
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-100">
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons style-2">
+                        <div class="sermons-content">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser8.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>God Make Me A Voice</h6>
+                                </a>
+                                <p>By </p>
+                                <p class="date">???</p>
+                                <p>If God makes you a voice, when you speak, sicknesses...</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#" type="button" data-toggle="modal" data-target="#God-make-me-a-voice-Modal">See More</a>
+                            </div>
+                            
+                              
                         </div>
                     </div>
-                    <!-- Audio Player -->
-                    <div class="sermons-audio-player d-flex align-items-center">
-                        <audio preload="auto" controls>
-                                <source src="${sermon.audio_or_video_url}">
-                            </audio>
-                        <div class="see-more-btn">
-                            <a href="#">See More</a>
+
+                    <div id="God-make-me-a-voice-Modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                      
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">God Make Me a Voice</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>If God makes you a voice, when you speak, sicknesses and diseases will disappear. You speak with authority and demons tremble. The same God that ordained the voice of Elijah, He is the same forever and He will be on your side. </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </div>
+
+                    <!-- Single Sermons Area -->
+                     <div class="single-sermons style-2">
+                        <div class="sermons-content">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser8.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Jonah In The Boat Of Your Life</h6>
+                                </a>
+                                <p>By </p>
+                                <p class="date">???</p>
+                                <p>It is an expensive joke to carry Jonah when you are working...</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#" type="button" data-toggle="modal" data-target="#God-make-me-a-voice-Modal">See More</a>
+                            </div>
+                            
+                              
                         </div>
                     </div>
+
+                    <div id="God-make-me-a-voice-Modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                      
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Jonah In The Boat Of Your Life</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>It is an expensive joke to carry Jonah when you are working for the Lord. When you want to fulfil the assignment God has given to you, you must make sure that whatever represents Jonah will not be in the boat of your ministry, family or your life.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </div>
+
+                      <!-- Single Sermons Area -->
+                     <div class="single-sermons style-2">
+                        <div class="sermons-content">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser8.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Jonah In The Boat Of Your Life</h6>
+                                </a>
+                                <p>By </p>
+                                <p class="date">???</p>
+                                <p>It is an expensive joke to carry Jonah when you are working...</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#" type="button" data-toggle="modal" data-target="#God-make-me-a-voice-Modal">See More</a>
+                            </div>
+                            
+                              
+                        </div>
+                    </div>
+
+                    <div id="God-make-me-a-voice-Modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                      
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Jonah In The Boat Of Your Life</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>It is an expensive joke to carry Jonah when you are working for the Lord. When you want to fulfil the assignment God has given to you, you must make sure that whatever represents Jonah will not be in the boat of your ministry, family or your life.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <!-- Single Sermons Area -->
+                     <div class="single-sermons style-2">
+                        <div class="sermons-content">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser8.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Jonah In The Boat Of Your Life</h6>
+                                </a>
+                                <p>By </p>
+                                <p class="date">???</p>
+                                <p>It is an expensive joke to carry Jonah when you are working...</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#" type="button" data-toggle="modal" data-target="#God-make-me-a-voice-Modal">See More</a>
+                            </div>
+                            
+                              
+                        </div>
+                    </div>
+
+                    <div id="God-make-me-a-voice-Modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                      
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Jonah In The Boat Of Your Life</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>It is an expensive joke to carry Jonah when you are working for the Lord. When you want to fulfil the assignment God has given to you, you must make sure that whatever represents Jonah will not be in the boat of your ministry, family or your life.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <!-- Single Sermons Area -->
+                     <div class="single-sermons style-2">
+                        <div class="sermons-content">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser8.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Jonah In The Boat Of Your Life</h6>
+                                </a>
+                                <p>By </p>
+                                <p class="date">???</p>
+                                <p>It is an expensive joke to carry Jonah when you are working...</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#" type="button" data-toggle="modal" data-target="#God-make-me-a-voice-Modal">See More</a>
+                            </div>
+                            
+                              
+                        </div>
+                    </div>
+
+                    <div id="God-make-me-a-voice-Modal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                      
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Jonah In The Boat Of Your Life</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>It is an expensive joke to carry Jonah when you are working for the Lord. When you want to fulfil the assignment God has given to you, you must make sure that whatever represents Jonah will not be in the boat of your ministry, family or your life.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                      
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-lg-6 mb-100">
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser1.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser2.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser3.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser4.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser5.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser6.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Sermons Area -->
+                    <div class="single-sermons">
+                        <div class="sermons-content d-flex align-items-center">
+                            <!-- Sermons Thumbnail -->
+                            <div class="sermons-thumbnail bg-img" style="background-image: url(img/bg-img/ser7.jpg);"></div>
+                            <!-- Sermons Content -->
+                            <div class="sermons-text">
+                                <a href="#">
+                                    <h6>Weekend Bible Study with believers</h6>
+                                </a>
+                                <p>By Priest Michael Smith</p>
+                                <p class="date">02 April, 2018</p>
+                            </div>
+                        </div>
+                        <!-- Audio Player -->
+                        <div class="sermons-audio-player d-flex align-items-center">
+                            <audio preload="auto" controls>
+                                    <source src="audio/dummy-audio.mp3">
+                                </audio>
+                            <div class="see-more-btn">
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -173,7 +583,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         <div class="d-flex flex-wrap mb-100">
                             <div class="footer-widget">
                                 <div class="widget-title">
-                                    <a href="#"><img src="img/BBC-Logo-2.png" alt=""></a>
+                                    <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
                                 </div>
                                 <div class="footer-social-info">
                                     <!-- <a href="#"><i class="fa fa-google-plus"></i></a>
@@ -269,7 +679,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/audioplayer.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-    <script src="sermons.js"></script>
 </body>
 
 </html>
