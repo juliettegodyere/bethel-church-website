@@ -1578,3 +1578,29 @@ textarea:focus {
     margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* vic start*/
+@media only screen and (min-width: 767px) {
+  .ministry-img{
+    margin-left:5.2%;
+  }
+}
+
+.pastors-see-more{
+  display: inline-block;
+  border-bottom: 1px solid #ac8a74;
+  color: #ac8a74 !important;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.pastors-see-more a{
+  color: #ac8a74 !important;
+}
+
+.pastor-img{
+  max-height: 50px;
+  height: 20px !important;
+}
+
+/* vic end */
