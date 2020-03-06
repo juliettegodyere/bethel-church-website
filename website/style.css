@@ -1598,9 +1598,8 @@ textarea:focus {
   color: #ac8a74 !important;
 }
 
-.pastor-img{
-  max-height: 50px;
-  height: 20px !important;
+.pastor-about ,.align-justify{
+  text-align: justify;
 }
 
 /* vic end */
