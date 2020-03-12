@@ -1602,4 +1602,12 @@ textarea:focus {
   text-align: justify;
 }
 
+.container.latest-news {
+  display: none;
+}
+
+.freebirdFormviewerViewNavigationPasswordWarning,.freebirdFormviewerViewFooterEmbeddedBackground {
+  display: none !important;
+}
+
 /* vic end */
