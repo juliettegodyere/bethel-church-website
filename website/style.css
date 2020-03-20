@@ -1626,4 +1626,41 @@ auido .paused{
   }
 }
 
+.main-footer-area .footer-widget .footer-social-info a {
+  color: #fff;
+}
+
+.main-footer-area .footer-widget .single-contact-area p {
+  color: #fff;
+}
+.main-footer-area .copywrite-text p {
+  color: #fff;
+}
+.main-footer-area .copywrite-text p a {
+  color: #fff;
+}
+
+@media  only screen and (min-width: 768px){
+  .u-events{
+  background-size: 107px 107px;
+}
+.l-sermons{
+  background-size: 195px 137px;
+}
+}
+ 
+@media  only screen and (max-width: 480px){
+  .u-events{
+    /*display: none;*/
+    /* background-image: url(img/upcoming-events/resized-200px/U-Sunday-Service.jpg) !important; */
+    background-size: 50% 90%;
+  } 
+.l-sermons{
+  /*display:none; */
+  /*background-image: url(img/sermons/resized-200px/Media-Art-IO.jpg) !important; */
+  background-size: 89% 100%; 
+}
+}
+
+    
 /* vic end */
