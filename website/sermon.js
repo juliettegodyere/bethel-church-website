@@ -46,20 +46,35 @@ function DisplaySermons(sermons, wrapper, rows_per_page, page){
             </div>
             </div>
 
-            <div id=${sermon.title} class="modal fade" role="dialog">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h4 id="modal-title" class="modal-title">${sermon.title}</h4>
+            <div id=${sermon.title} class="modal fade right" tabindex="-1" role="dialog">
+                <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+                    <div class="modal-content-full-width modal-content">
+                        <div class="modal-header-full-width modal-header text-center">
+
+
+                        <div class="breadcumb-area bg-img" style="background-image: url(${sermon.background_image});">
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col-12 col-md-12">
+                                        <div class="breadcumb-text">
+                                            <!-- <h2>${sermon.title}</h2>
+                                            <p>By ${sermon.pastor}</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        </div>
+                        <div class="modal-body">
+                        <p id="content" class="align-justify">${sermon.text_content} </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                <p id="content" class="align-justify">${sermon.text_content} </p>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            </div>
             </div>`;
         wrapper.append(sermonContent);
     }
