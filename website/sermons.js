@@ -141,11 +141,5 @@ const sermons = [
   }
 ];
 
-document.getElementById("sermons-div").innerHTML = `
-${sermons.map(function(sermon) {
-  return `
-  
-  `;
-})}
-`;
 console.log(sermons);
+

@@ -1596,7 +1596,7 @@ textarea:focus {
 }
 
 .pastors-see-more a{
-  color: #0a1768 !important;
+  color: #8F8F8F !important;
 }
 
 .pastor-about ,.align-justify{
@@ -1648,7 +1648,9 @@ auido .paused{
   background-size: 195px 137px;
 }
 }
- 
+a:not([href]):not([tabindex]) {
+  color: #fff;
+}
 @media  only screen and (max-width: 480px){
   .u-events{
     /*display: none;*/
@@ -1660,7 +1662,40 @@ auido .paused{
   /*background-image: url(img/sermons/resized-200px/Media-Art-IO.jpg) !important; */
   background-size: 89% 100%; 
 }
+
+.p-image {
+  width: 50% !important;
+  height: 50% !important;
+  text-align:center;
 }
+
+.single-pastor-area.mb-100 {
+   text-align:center;
+}
+
+.section-padding-100-0 {
+  padding-top: 10px !important;
+}
+.section-heading {
+  margin-bottom: 20px !important;
+}
+.mb-100 {
+  margin-bottom: 20px !important;
+}
+.single-pastor-area .pastor-content h6 {
+  margin-bottom: 5px !important;
+}
+.faith-cta-area .cta-text h5 {
+  font-size: 14px !important;
+}
+
+}
+@media only screen and (max-width: 767px){
+  .contact-info-area {
+    padding: 20px 15px !important;
+}
+}
+
 
     
 /* vic end */
