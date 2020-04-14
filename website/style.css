@@ -41,7 +41,7 @@ h6 {
   font-weight: 500; }
 
 p {
-  color: #5a5a5a;
+  color: #5a5a5a; 
   font-size: 14px;
   line-height: 1.8;
   font-weight: 400; }
@@ -1762,5 +1762,47 @@ a:not([href]):not([tabindex]) {
   border-top: 1px solid #9ea2a2 !important;
 }
 
+
+.mh-bg-img {
+  position: relative;
+  z-index: 0 !important;
+  width: 100%;
+  height: 340px;
+
+  background-size: cover;
+background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 767px) {
+  .mh-bg-img {
+    height: 640px !important;
+
+    background-size: 100% 100% !important;
+  }
+}
+
+.btn-modal-close{
+  background-color: #0a1768;
+  color: #fff !important;
+  border-radius: 25px;
+}
+
+.close{
+  background-color: #0a1768 !important;
+  color: #fff !important;
+  border-radius: 25px;
+}
+.audioplayer {
+  border-radius: 15px !important;
+  opacity: 0.9;
+}
+
+/*.audioplayer-playpause, .audioplayer-time .audioplayer-time-current,
+ .audioplayer-bar, .audioplayer-bar-loaded, .audioplayer-bar-played,
+ .audioplayer-time, .audioplayer-time-duration, .audioplayer-volume,
+ .audioplayer-time-duration
+ {
+   display: none !important;
+ }*/
 
 /* vic end */
