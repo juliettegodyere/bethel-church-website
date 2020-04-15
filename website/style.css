@@ -1797,6 +1797,32 @@ background-repeat: no-repeat;
   opacity: 0.9;
 }
 
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.iF {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 468px){
+ .iF {
+   margin-bottom: 30px;
+ }
+}
+
 /*.audioplayer-playpause, .audioplayer-time .audioplayer-time-current,
  .audioplayer-bar, .audioplayer-bar-loaded, .audioplayer-bar-played,
  .audioplayer-time, .audioplayer-time-duration, .audioplayer-volume,
