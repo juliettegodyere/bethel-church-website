@@ -22,9 +22,54 @@
   <body>
 
     <!-- ##### Header Area Start ##### -->
-    <header class="header-area" id="Header">
+    <header class="header-area">
       <!-- Navbar Area -->
+      <div class="faith-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="faithNav">
+              <!-- Logo -->
+              <a
+                class="nav-brand"
+                href="index.html"
+                
+                ><img src="img/BBC-Logo-1.png" alt=""
+              /></a>
       
+              <!-- Navbar Toggler -->
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"
+                  ><span></span><span></span><span></span
+                ></span>
+              </div>
+      
+              <!-- Menu -->
+              <div class="classy-menu">
+                <!-- Close Button -->
+                <div class="classycloseIcon">
+                  <div class="cross-wrap">
+                    <span class="top"></span><span class="bottom"></span>
+                  </div>
+                </div>
+      
+                <!-- Nav Start -->
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Who We are</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- Nav End -->
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- ##### Header Area End ##### -->
 
@@ -55,9 +100,9 @@
         <div class="row">
           <div class="col-12">
             <div class="contact-info-area">
-              <div class="row">
+              <div class="contact-row row">
                 <!-- Contact Information -->
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 info">
                   <div class="contact-information">
                     <h5>Contact us</h5>
                     <!-- Single Contact Area -->
@@ -83,12 +128,12 @@
                 </div>
 
                 <!-- Contact Form Area -->
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 form">
                   <div class="contact-form-area">
                     <iframe 
                     src="https://docs.google.com/forms/d/e/1FAIpQLSdiPS5KL8fKVvNJeTxme808qUw3AHq0tJ8WphQFV1VJDIoT8Q/viewform?embedded=true" 
-                    width="510" 
-                    height="818" 
+                    
+                    id="contact-iframe" 
                     frameborder="0" 
                     marginheight="0" 
                     marginwidth="0">Loading…</iframe>
@@ -126,7 +171,6 @@
     <script src="js/plugins/audioplayer.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-    <script src="header.js"></script>
     <script src="footer.js"></script>
   </body>
 </html>
