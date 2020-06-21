@@ -1,9 +1,7 @@
-let video_src = ""; /*"https://www.youtube.com/embed/L_hFw_cWg9U";*/
+let video_src = ""; //"https://www.youtube.com/embed/L_hFw_cWg9U";
 let iframeDiv = $("#iF");
-let iFrameBreadCrumb = document.querySelector("#live-sermon-iFrame");
 
 if (video_src) {
-  iFrameBreadCrumb.style.display = "block";
   iframeDiv.append(`
         <div
     class="container section-heading"

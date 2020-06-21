@@ -2247,7 +2247,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .iF {
-  /* margin-top: 30px;*/
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -2262,14 +2262,6 @@ a:not([href]):not([tabindex]) {
   .contact-area {
     margin-bottom: 10vh;
   }
-}
-
-#live-sermon-iFrame {
-  display: none;
-}
-
-#live-sermon-iFrame::after {
-  background-color: #fff;
 }
 
 /*.audioplayer-playpause, .audioplayer-time .audioplayer-time-current,
