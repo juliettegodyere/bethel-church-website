@@ -1,6 +1,4 @@
-let $footer_element = $('#Footer');
-
-let footer = `<div class="main-footer-area section-padding-100-0 bg-img foo-bg-overlay"
+let $footer_element=$("#Footer"),footer=`<div class="main-footer-area section-padding-100-0 bg-img foo-bg-overlay"
         style="background-image: url(img/bg-img/bg-1.jpg);" >
         <div class="container">
           <div class="row">
@@ -109,6 +107,4 @@ let footer = `<div class="main-footer-area section-padding-100-0 bg-img foo-bg-o
             </div>
           </div>
         </div>
-      </div>`;
-
-$footer_element.append(footer);
+      </div>`;$footer_element.append(footer);

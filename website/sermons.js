@@ -11,14 +11,15 @@ const sermons = [
     `,
     audio_or_video_url: "audio/GOD-MAKE-ME-A-VOICE.mp3",
     background_image: "img/sermons/God-Make-Me-a-Voice.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 2,
     title: "Implicit Obedience",
     pastor: "Apostle J.C. Uka",
     pastor_id: 1,
-    content_snippet: "The Biblical illustration of the miracle of Jesus Christ turning ...",
+    content_snippet:
+      "The Biblical illustration of the miracle of Jesus Christ turning ...",
     text_content: `
       The Biblical illustration of the miracle of Jesus Christ turning water into wine reveals unto us that implicit, 
       complete, unquestioned and unprocrastinated obedience guarantees access to the new wine of the Holy Spirit of God. 
@@ -68,14 +69,15 @@ const sermons = [
     `,
     audio_or_video_url: "",
     background_image: "img/sermons/Media-Art-IO.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 3,
     title: "God needs leaders",
     pastor: "Pastor Samuel Affiah",
     pastor_id: 2,
-    content_snippet: "Our community, nation and the world are faced with problems...",
+    content_snippet:
+      "Our community, nation and the world are faced with problems...",
     text_content: `Our community, nation and the world are faced with problems that appear to be insurmountable. 
     There are security and defence challenges which are escalating at an alarming rate.Our youths, our future 
     leaders are confused and demoralized. 
@@ -96,7 +98,7 @@ const sermons = [
      in God’s agenda for transformation. God needs leaders.`,
     audio_or_video_url: "",
     background_image: "img/sermons/Media-Art-GNL.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 4,
@@ -105,17 +107,17 @@ const sermons = [
     pastor_id: 2,
     content_snippet: "",
     text_content: "",
-    audio_or_video_url: "audio/Enthrone-Him-As-King-Pastor-Samuel-Affiah.mp3"
-    ,
+    audio_or_video_url: "audio/Enthrone-Him-As-King-Pastor-Samuel-Affiah.mp3",
     background_image: "img/Enthrone-him-as-King.jpeg",
-    date: ""
+    date: "",
   },
   {
     id: 5,
     title: "How does God see you",
     pastor: "Pastor Mrs Delphine Uka",
     pastor_id: 3,
-    content_snippet: "One morning I was reading my bible precisely 1st Kings 11, where Solomon loved and married strange women...",
+    content_snippet:
+      "One morning I was reading my bible precisely 1st Kings 11, where Solomon loved and married strange women...",
     text_content: `
       One morning I was reading my bible precisely 1st Kings 11, where Solomon loved and married strange women, went after their gods 
       and built high places for their gods. I asked God, I said: “Lord why did you keep quiet when you saw that Solomon’s heart was shifting away from you?
@@ -154,22 +156,23 @@ const sermons = [
     `,
     audio_or_video_url: "",
     background_image: "img/sermons/Media-Art-HDGSY.jpg",
-    date: ""
+    date: "",
   },
-  
+
   {
     id: 6,
     title: "Jonah in the boat of your life",
     pastor: "Apostle J.C. Uka",
     pastor_id: 1,
-    content_snippet: "It is an expensive joke to carry Jonah when you are working...",
+    content_snippet:
+      "It is an expensive joke to carry Jonah when you are working...",
     text_content: `
       It is an expensive joke to carry Jonah when you are working for the Lord. When you want to fulfil the assignment God has given to you, you must make sure that whatever represents Jonah will not be in the boat of your ministry, family or your life.
     "
     `,
     audio_or_video_url: "audio/JONAH-IN-THE-BOAT-OF-YOUR-LIFE.mp3",
     background_image: "img/sermons/Jonah.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 7,
@@ -182,34 +185,36 @@ const sermons = [
     `,
     audio_or_video_url: "audio/O-LORD-REMEMBER-ME.mp3",
     background_image: "img/sermons/O-Lord-Remember-Me.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 8,
     title: "Principles of kingdom marriage",
     pastor: "Apostle J.C. Uka",
     pastor_id: 1,
-    content_snippet: "Marriage is the mind of God. When the marriage is not in...",
+    content_snippet:
+      "Marriage is the mind of God. When the marriage is not in...",
     text_content: `
       Marriage is the mind of God.
       When the marriage is not in order, we will not be able to produce people that will carry out the mind of God.    
     `,
     audio_or_video_url: "audio/Principles-of-Kingdom-Marriage.mp3",
     background_image: "img/sermons/Principles-of-Kingdom-Marriage.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 9,
     title: "God will do a new thing",
     pastor: "Apostle J.C. Uka",
     pastor_id: 1,
-    content_snippet: "God will do a new thing is one of many prophetic messages...",
+    content_snippet:
+      "God will do a new thing is one of many prophetic messages...",
     text_content: `
       God will do a new thing is one of many prophetic messages by Apostle J.C. Uka. This message talks about God having the ability to do new things in the lives of people, families and nations.
     `,
     audio_or_video_url: "audio/GOD-WILL-DO-A-NEW-THING.mp3",
     background_image: "img/sermons/New-thing.jpg",
-    date: ""
+    date: "",
   },
   {
     id: 10,
@@ -218,10 +223,11 @@ const sermons = [
     pastor_id: 1,
     content_snippet: "",
     text_content: "",
-    audio_or_video_url: "audio/The-Higher-Call-of-Refined-and-Purified-Leader.mp3",
+    audio_or_video_url:
+      "audio/The-Higher-Call-of-Refined-and-Purified-Leader.mp3",
     background_image: "img/sermons/Higher.jpg",
-    date: ""
-  }/*,
+    date: "",
+  },
   {
     id: 11,
     title: "Loose Him and let Him Go!",
@@ -231,8 +237,8 @@ const sermons = [
     text_content: "",
     audio_or_video_url: "audio/Loose-Him-And-Let-Him-Go.mp3",
     background_image: "",
-    date: ""
-  }
+    date: "",
+  },
 
   /*
   ,{
