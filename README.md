@@ -1,6 +1,19 @@
 # bethel-church-website
 
-**Creating an application**
+**Where to locate each file that should have dynamic content**
+
+1. public/js/sermons - holds an array of sermons objects. Open it up and add new sermon objects and it will be added to the sermons that displays on the web app.
+2. public/js/live - paste the url to the live streaming sermon and the bbc-tv page will show the live sermon video.
+3. public/js/scripts - edit the date in line #11 to change the countdown date.
+
+**How to run the project locally**
+
+1. Clone this repository
+2. Open up your terminal and run "npm install" to install all dependencies.
+3. Run node app.js to start the application
+4. In your brower, navigate to "http://localhost:8000/"
+
+<!-- **Creating an application**
 
 Prepare your app for the project.
 1. Clone this application.
@@ -28,4 +41,4 @@ https://bethel-website-256107.appspot.com
 
 **Go Daddy URL**
 
-http://bethelbiblechurchhq.org/
+http://bethelbiblechurchhq.org/ -->
